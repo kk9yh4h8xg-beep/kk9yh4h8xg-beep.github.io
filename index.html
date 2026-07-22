@@ -140,87 +140,87 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Dienstag, 21. Juli 2026",
+  date:    "Mittwoch, 22. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1420  ·  Chip-Rallye treibt NASDAQ  ·  Iran-Spannungen stützen Ölpreis  ·  Earnings-Woche startet",
+  headline:"EUR/USD 1,1411  ·  Softwaretitel bremsen NASDAQ trotz Chip-Rallye  ·  Ölpreise bleiben wegen Nahost-Spannungen erhöht  ·  Alphabet und Tesla legen nach Handelsschluss Zahlen vor",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.504",    chg:"+0,82 %", dir:"up"   },
-    { lbl:"NASDAQ 100",  val:"29.020",   chg:"+1,93 %", dir:"up"   },
-    { lbl:"VIX",         val:"17,70",    chg:"−5,10 %", dir:"down" },
-    { lbl:"BTC",         val:"66.700 $", chg:"+2,30 %", dir:"up"   },
+    { lbl:"S&P 500",     val:"7.495",    chg:"−0,19 %", dir:"down" },
+    { lbl:"NASDAQ 100",  val:"29.009",   chg:"−0,50 %", dir:"down" },
+    { lbl:"VIX",         val:"17,86",    chg:"−2,60 %", dir:"down" },
+    { lbl:"BTC",         val:"65.710 $", chg:"+1,00 %", dir:"up"   },
   ],
 
   positions: [
     {
-      tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"132,63 $", chg:"−1,65 %", dir:"down", sentiment:"neutral",
+      tkr:"PLTR", nm:"Palantir · NASDAQ/USD",
+      px:"130,08 $", chg:"−3,54 %", dir:"down", sentiment:"neutral",
       news:[
-        "Q2-Zahlen für den 3. August terminiert, Investoren positionieren sich vor dem Bericht.",
-        "Kein klarer Markttreiber heute; Bullen-Bären-Debatte über die hohe Bewertung hält an.",
+        "Kurs gibt im Zuge einer breiteren Abkühlung bei hochbewerteten Softwarewerten nach, ohne unternehmensspezifischen Auslöser.",
+        "Institutionelle Rebalancierung vor der Q2-Berichtssaison Anfang August, Investoren fordern konkretere Beweise für AIP-Monetarisierung.",
       ],
     },
     {
-      tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"378,93 $", chg:"+2,53 %", dir:"up", sentiment:"bullish",
+      tkr:"TSLA", nm:"Tesla · NASDAQ/USD",
+      px:"376,88 $", chg:"−0,54 %", dir:"down", sentiment:"neutral",
       news:[
-        "Robotaxi-Dienst startet in Orlando und Tampa, einen Tag vor den Q2-Zahlen.",
-        "Optionsmarkt preist zu den Zahlen am Mittwoch die größte Kursbewegung seit einem Jahr ein.",
+        "Q2-Zahlen nach US-Börsenschluss erwartet; vorab bekannte Rekord-Auslieferungen von 480.126 Fahrzeugen (+25 % ggü. Vorjahr) und Energiespeicher-Rekord von 13,5 GWh.",
+        "Optionsmarkt preist einen Kursausschlag von 7,6 % ein; die NHTSA-Untersuchung zum Autopilot-System bleibt als regulatorischer Overhang bestehen.",
       ],
     },
     {
-      tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"207,29 $", chg:"+1,97 %", dir:"up", sentiment:"bullish",
+      tkr:"NVDA", nm:"NVIDIA · NASDAQ/USD",
+      px:"207,00 $", chg:"+3,26 %", dir:"up", sentiment:"bullish",
       news:[
-        "Neue Vera-CPU für KI-Rechenzentren vorgestellt, Vorstoß gegen AMD und Intel.",
-        "9,3-Prozent-Beteiligung an Neocloud-Anbieter Nebius sorgt für Kursfantasie in der Branche.",
+        "Aktie profitiert von einem stabileren geldpolitischen Ausblick der Fed und erneuter Nachfrage nach Chip-Werten; Analysten erhöhen Kursziele wegen steigender Software-/Edge-Margen.",
+        "Gerüchte über eine Ausweitung der US-Exportkontrollen auf weitere Nahost-/Südostasien-Regionen bleiben als Belastungsfaktor im Hintergrund.",
       ],
     },
     {
-      tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.581,30 €", chg:"+3,84 %", dir:"up", sentiment:"bullish",
+      tkr:"ASML", nm:"ASML Holding · Euronext/EUR",
+      px:"1.598,50 €", chg:"+0,32 %", dir:"up", sentiment:"bullish",
       news:[
-        "Trotz Blowout-Quartalszahlen bleibt der Overhang aus US-Exportkontrollen und dem China-Geschäft im Hintergrund bestehen.",
-        "Aktie erholt sich mit dem breiten Halbleiter-Rebound nach der Verkaufswelle der Vorwoche.",
+        "Aktie bleibt nahe Rekordniveau nach dem Blowout-Quartal vom 15. Juli mit angehobener Jahresprognose (43-45 Mrd. € Umsatz).",
+        "US-Exportkontrollen für China und der drohende MATCH Act bleiben als regulatorischer Overhang im Hintergrund bestehen.",
       ],
     },
     {
-      tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"247,51 $", chg:"−0,99 %", dir:"down", sentiment:"neutral",
+      tkr:"AMZN", nm:"Amazon · NASDAQ/USD",
+      px:"248,20 $", chg:"+0,28 %", dir:"up", sentiment:"neutral",
       news:[
-        "Wells Fargo erhöht Kursziel auf 322 $, verweist aber auf steigende Speicherchip-Kosten als Belastung.",
-        "Iranische Revolutionsgarden sollen laut Medienberichten Amazon-Infrastruktur in Bahrain angegriffen haben.",
+        "Keine großen unternehmensspezifischen Nachrichten; Fokus richtet sich auf die Zahlen am 30. Juli und mögliche AWS-Ankündigungen von CEO Jassy.",
+        "Rund 200 Mrd. $ geplante Investitionen in KI-Rechenzentren für 2026 bleiben Diskussionsthema zwischen Wachstumsstory und Margendruck.",
       ],
     },
     {
-      tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"543,86 $", chg:"+8,00 %", dir:"up", sentiment:"bullish",
+      tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ/USD",
+      px:"550,14 $", chg:"+1,26 %", dir:"up", sentiment:"bullish",
       news:[
-        "Microsoft bestätigt Großeinsatz von AMD-Helios-Racks in Azure-Rechenzentren.",
-        "Erwartungen steigen vor dem \"Advancing AI 2026\"-Event am 22./23. Juli in San Francisco.",
+        "Erster Tag des zweitägigen \"Advancing AI 2026\"-Events in San Francisco, mit MI450X/MI500-Ankündigungen und Zen-6-\"Venice\"-Launch im Fokus.",
+        "Rückenwind hält an nach der Microsoft-Ankündigung vom Vortag, AMDs Helios-Racks in großem Stil in Azure einzusetzen.",
       ],
     },
     {
-      tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"353,43 $", chg:"+0,90 %", dir:"up", sentiment:"neutral",
+      tkr:"GOOGL", nm:"Alphabet · NASDAQ/USD",
+      px:"347,67 $", chg:"+0,26 %", dir:"up", sentiment:"neutral",
       news:[
-        "Q2-Zahlen werden morgen nach US-Börsenschluss veröffentlicht, BofA erwartet starkes Cloud-Wachstum.",
-        "Verzögerung des KI-Modells Gemini 3.5 Pro bleibt als Belastungsfaktor im Hintergrund präsent.",
+        "Q2-Zahlen nach US-Börsenschluss erwartet; Konsens sieht 2,89 $ Gewinn je Aktie bei 116,84 Mrd. $ Umsatz, Fokus liegt auf Cloud-Wachstum.",
+        "EU-Kartellstrafe von 4,67 Mrd. € und DMA-Auflagen zur Datenweitergabe bleiben regulatorischer Overhang; kurz vor den Zahlen veröffentlicht Google neue Gemini-3.6-Flash-Modelle.",
       ],
     },
     {
-      tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"123,32 $", chg:"+2,90 %", dir:"up", sentiment:"bullish",
+      tkr:"SPCX", nm:"SpaceX · NASDAQ/USD",
+      px:"123,54 $", chg:"+3,08 %", dir:"up", sentiment:"bullish",
       news:[
-        "Macquarie bekräftigt Kaufempfehlung, Aktie durchbricht siebentägige Verlustserie.",
-        "Erste Quartalszahlen als Börsenunternehmen für den 4. August terminiert, löst Lock-up-Ablauf für Millionen Aktien aus.",
+        "Musk warnt Shortseller öffentlich vor \"sehr geringer Überlebenswahrscheinlichkeit\" ihrer Wetten; Aktie erholt sich vom Rekordtief bei 118 $.",
+        "Leerverkaufsquote steigt auf rund 32 % des Streubesitzes (≈25 Mrd. $); erste Quartalszahlen als Börsenunternehmen stehen am 4. August an.",
       ],
     },
   ],
 
   outlook: {
-    title:"Mittwoch im Fokus",
-    body:"Tesla und Alphabet legen morgen nach US-Börsenschluss ihre Q2-Zahlen vor, hinzu kommt Intel — der Optionsmarkt preist bei Tesla die größte Kursbewegung seit einem Jahr ein. AMD eröffnet zudem sein zweitägiges \"Advancing AI\"-Event in San Francisco, von dem neue KI-Kundenankündigungen erwartet werden. Die Ölpreise bleiben wegen der US-Iran-Spannungen erhöht, während der Halbleiter-Rebound der vergangenen Tage auf die Probe gestellt wird, sobald die ersten Tech-Zahlen vorliegen.",
+    title:"Donnerstag im Fokus",
+    body:"Die Marktreaktionen auf die Zahlen von Alphabet und Tesla nach Handelsschluss dürften den Handel prägen, nachdem der Optionsmarkt bei Tesla einen Ausschlag von 7,6 % einpreist. AMD setzt sein \"Advancing AI\"-Event mit der Keynote von CEO Lisa Su fort, von der Details zum MI450X-Beschleuniger und der nächsten EPYC-Generation erwartet werden. Intel legt am Donnerstag Zahlen vor, nachdem die Aktie am Dienstag um rund 8 % zulegte. Die Ölpreise bleiben wegen der geopolitischen Spannungen im Nahen Osten im Fokus.",
   },
 };
 
