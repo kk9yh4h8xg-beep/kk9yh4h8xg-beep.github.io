@@ -140,87 +140,86 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Mittwoch, 22. Juli 2026",
+  date:    "Donnerstag, 23. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1411  ·  Softwaretitel bremsen NASDAQ trotz Chip-Rallye  ·  Ölpreise bleiben wegen Nahost-Spannungen erhöht  ·  Alphabet und Tesla legen nach Handelsschluss Zahlen vor",
+  headline:"EUR/USD 1,1384  ·  Ölpreis über 100 $ nach Nahost-Eskalation  ·  KI-Ausgabensorgen bremsen Tech  ·  Alphabet und Tesla nach Zahlen im Sturzflug",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.495",    chg:"−0,19 %", dir:"down" },
-    { lbl:"NASDAQ 100",  val:"29.009",   chg:"−0,50 %", dir:"down" },
-    { lbl:"VIX",         val:"17,86",    chg:"−2,60 %", dir:"down" },
-    { lbl:"BTC",         val:"65.710 $", chg:"+1,00 %", dir:"up"   },
+    { lbl:"S&P 500",     val:"7.408",      chg:"−1,21 %", dir:"down" },
+    { lbl:"NASDAQ 100",  val:"29.172",     chg:"−2,20 %", dir:"down" },
+    { lbl:"VIX",         val:"16,64",      chg:"−2,40 %", dir:"down" },
+    { lbl:"BTC",         val:"64.800 $",   chg:"−1,81 %", dir:"down" },
   ],
 
   positions: [
     {
-      tkr:"PLTR", nm:"Palantir · NASDAQ/USD",
-      px:"130,08 $", chg:"−3,54 %", dir:"down", sentiment:"neutral",
+      tkr:"PLTR", nm:"Palantir · NASDAQ",
+      px:"123,36 $", chg:"−0,97 %", dir:"down", sentiment:"neutral",
       news:[
-        "Kurs gibt im Zuge einer breiteren Abkühlung bei hochbewerteten Softwarewerten nach, ohne unternehmensspezifischen Auslöser.",
-        "Institutionelle Rebalancierung vor der Q2-Berichtssaison Anfang August, Investoren fordern konkretere Beweise für AIP-Monetarisierung.",
+        "Kein einzelner Kurstreiber; Bewertungsdebatte vor den Zahlen am 3. August hält an.",
+        "Insiderverkäufe und Kritik an der Zusammenarbeit mit dem britischen NHS belasten das Sentiment weiterhin.",
       ],
     },
     {
-      tkr:"TSLA", nm:"Tesla · NASDAQ/USD",
-      px:"376,88 $", chg:"−0,54 %", dir:"down", sentiment:"neutral",
+      tkr:"TSLA", nm:"Tesla · NASDAQ",
+      px:"316,42 $", chg:"−15,40 %", dir:"down", sentiment:"bearish",
       news:[
-        "Q2-Zahlen nach US-Börsenschluss erwartet; vorab bekannte Rekord-Auslieferungen von 480.126 Fahrzeugen (+25 % ggü. Vorjahr) und Energiespeicher-Rekord von 13,5 GWh.",
-        "Optionsmarkt preist einen Kursausschlag von 7,6 % ein; die NHTSA-Untersuchung zum Autopilot-System bleibt als regulatorischer Overhang bestehen.",
+        "Q2-Zahlen verfehlen die Erwartungen deutlich, operative Kosten steigen schneller als der Umsatz, freier Cashflow negativ.",
+        "Frankreich lehnt die EU-Zulassung von Teslas FSD-Fahrassistenz vorerst ab.",
       ],
     },
     {
-      tkr:"NVDA", nm:"NVIDIA · NASDAQ/USD",
-      px:"207,00 $", chg:"+3,26 %", dir:"up", sentiment:"bullish",
+      tkr:"NVDA", nm:"NVIDIA · NASDAQ",
+      px:"207,84 $", chg:"−1,99 %", dir:"down", sentiment:"neutral",
       news:[
-        "Aktie profitiert von einem stabileren geldpolitischen Ausblick der Fed und erneuter Nachfrage nach Chip-Werten; Analysten erhöhen Kursziele wegen steigender Software-/Edge-Margen.",
-        "Gerüchte über eine Ausweitung der US-Exportkontrollen auf weitere Nahost-/Südostasien-Regionen bleiben als Belastungsfaktor im Hintergrund.",
+        "Kein unternehmensspezifischer Treiber; Aktie fällt mit dem breiten KI-Ausverkauf nach Alphabets Capex-Schock.",
+        "Bericht, wonach Chinas Moonshot AI trotz US-Exportverbot Zugriff auf Nvidia-Chips hatte, sorgt für regulatorischen Gegenwind.",
       ],
     },
     {
-      tkr:"ASML", nm:"ASML Holding · Euronext/EUR",
-      px:"1.598,50 €", chg:"+0,32 %", dir:"up", sentiment:"bullish",
+      tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
+      px:"1.579,20 €", chg:"−0,65 %", dir:"down", sentiment:"bullish",
       news:[
-        "Aktie bleibt nahe Rekordniveau nach dem Blowout-Quartal vom 15. Juli mit angehobener Jahresprognose (43-45 Mrd. € Umsatz).",
-        "US-Exportkontrollen für China und der drohende MATCH Act bleiben als regulatorischer Overhang im Hintergrund bestehen.",
+        "Blowout-Quartalszahlen und die zweite Anhebung der Jahresprognose 2026 auf 43–45 Mrd. Euro Umsatz treiben die Aktie.",
+        "US-Exportkontrollen und der China-Geschäftsanteil bleiben als Overhang im Hintergrund bestehen.",
       ],
     },
     {
-      tkr:"AMZN", nm:"Amazon · NASDAQ/USD",
-      px:"248,20 $", chg:"+0,28 %", dir:"up", sentiment:"neutral",
+      tkr:"AMZN", nm:"Amazon · NASDAQ",
+      px:"233,73 $", chg:"−4,54 %", dir:"down", sentiment:"bearish",
       news:[
-        "Keine großen unternehmensspezifischen Nachrichten; Fokus richtet sich auf die Zahlen am 30. Juli und mögliche AWS-Ankündigungen von CEO Jassy.",
-        "Rund 200 Mrd. $ geplante Investitionen in KI-Rechenzentren für 2026 bleiben Diskussionsthema zwischen Wachstumsstory und Margendruck.",
+        "Ein Senatsausschuss prüft mutmaßlichen chinesischen Einfluss auf Amazon, dazu wachsende Sorge vor steigenden KI-Investitionen vor den Zahlen am 30. Juli.",
       ],
     },
     {
-      tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ/USD",
-      px:"550,14 $", chg:"+1,26 %", dir:"up", sentiment:"bullish",
+      tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
+      px:"539,63 $", chg:"−2,30 %", dir:"down", sentiment:"bullish",
       news:[
-        "Erster Tag des zweitägigen \"Advancing AI 2026\"-Events in San Francisco, mit MI450X/MI500-Ankündigungen und Zen-6-\"Venice\"-Launch im Fokus.",
-        "Rückenwind hält an nach der Microsoft-Ankündigung vom Vortag, AMDs Helios-Racks in großem Stil in Azure einzusetzen.",
+        "AMD stellt auf dem zweitägigen \"Advancing AI\"-Event neue Produkte vor und meldet eine KI-Inferenz-Partnerschaft mit Cerebras.",
+        "Weitere Rechenzentrums-Deals mit Vultr, TensorWave und Liqid rund um Instinct-GPUs unterstreichen die Nachfrage.",
       ],
     },
     {
-      tkr:"GOOGL", nm:"Alphabet · NASDAQ/USD",
-      px:"347,67 $", chg:"+0,26 %", dir:"up", sentiment:"neutral",
+      tkr:"GOOGL", nm:"Alphabet · NASDAQ",
+      px:"319,10 $", chg:"−6,72 %", dir:"down", sentiment:"bearish",
       news:[
-        "Q2-Zahlen nach US-Börsenschluss erwartet; Konsens sieht 2,89 $ Gewinn je Aktie bei 116,84 Mrd. $ Umsatz, Fokus liegt auf Cloud-Wachstum.",
-        "EU-Kartellstrafe von 4,67 Mrd. € und DMA-Auflagen zur Datenweitergabe bleiben regulatorischer Overhang; kurz vor den Zahlen veröffentlicht Google neue Gemini-3.6-Flash-Modelle.",
+        "Alphabet hebt die Capex-Prognose 2026 auf 195–205 Mrd. Dollar an, was trotz starkem Cloud-Wachstum Sorgen vor KI-Überinvestitionen schürt.",
+        "Die EU verhängt zusätzlich eine Kartellstrafe von 1 Mrd. Dollar wegen Play Store und Suche.",
       ],
     },
     {
-      tkr:"SPCX", nm:"SpaceX · NASDAQ/USD",
-      px:"123,54 $", chg:"+3,08 %", dir:"up", sentiment:"bullish",
+      tkr:"SPCX", nm:"SpaceX · NASDAQ",
+      px:"112,90 $", chg:"−2,00 %", dir:"down", sentiment:"bearish",
       news:[
-        "Musk warnt Shortseller öffentlich vor \"sehr geringer Überlebenswahrscheinlichkeit\" ihrer Wetten; Aktie erholt sich vom Rekordtief bei 118 $.",
-        "Leerverkaufsquote steigt auf rund 32 % des Streubesitzes (≈25 Mrd. $); erste Quartalszahlen als Börsenunternehmen stehen am 4. August an.",
+        "Der Start von Starship Flight 13 wird nach einer fehlgeschlagenen Raptor-3-Zündung abgebrochen, ein neuer Versuch wird frühestens kommende Woche erwartet.",
+        "Wachsende Leerverkäuferpositionen und Verwässerungssorgen vor dem Lock-up-Ablauf am 6. August belasten zusätzlich.",
       ],
     },
   ],
 
   outlook: {
-    title:"Donnerstag im Fokus",
-    body:"Die Marktreaktionen auf die Zahlen von Alphabet und Tesla nach Handelsschluss dürften den Handel prägen, nachdem der Optionsmarkt bei Tesla einen Ausschlag von 7,6 % einpreist. AMD setzt sein \"Advancing AI\"-Event mit der Keynote von CEO Lisa Su fort, von der Details zum MI450X-Beschleuniger und der nächsten EPYC-Generation erwartet werden. Intel legt am Donnerstag Zahlen vor, nachdem die Aktie am Dienstag um rund 8 % zulegte. Die Ölpreise bleiben wegen der geopolitischen Spannungen im Nahen Osten im Fokus.",
+    title:"Freitag im Fokus",
+    body:"Der Wirtschaftskalender ist vor der Fed-Sitzung am 28./29. Juli dünn besetzt; am Freitag stehen vor allem die US-Neubauverkäufe für Juni sowie zahlreiche Einzelberichte außerhalb des Depots an. Die Ölpreise bleiben nach der Eskalation im Nahen Osten über der Marke von 100 Dollar je Barrel im Fokus, nachdem Huthi-Rebellen Tankerangriffe im Roten Meer gemeldet haben. SpaceX dürfte den nach der gescheiterten Raptor-3-Zündung abgesagten Start von Starship Flight 13 frühestens kommende Woche erneut versuchen. Nach dem scharfen Ausverkauf bei Alphabet und Tesla dürfte der Markt weiter auf Reaktionen zur Kapitalausgaben-Debatte in der KI-Branche achten.",
   },
 };
 
