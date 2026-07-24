@@ -140,86 +140,87 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Donnerstag, 23. Juli 2026",
+  date:    "Freitag, 24. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1384  ·  Ölpreis über 100 $ nach Nahost-Eskalation  ·  KI-Ausgabensorgen bremsen Tech  ·  Alphabet und Tesla nach Zahlen im Sturzflug",
+  headline:"EUR/USD 1,1384  ·  Erholung nach Tech-Ausverkauf  ·  Neue US-Zölle treten in Kraft  ·  Ölpreis fällt unter 100 $",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.408",      chg:"−1,21 %", dir:"down" },
-    { lbl:"NASDAQ 100",  val:"29.172",     chg:"−2,20 %", dir:"down" },
-    { lbl:"VIX",         val:"16,64",      chg:"−2,40 %", dir:"down" },
-    { lbl:"BTC",         val:"64.800 $",   chg:"−1,81 %", dir:"down" },
+    { lbl:"S&P 500",     val:"7.379",     chg:"+0,28 %", dir:"up"   },
+    { lbl:"NASDAQ 100",  val:"29.043",    chg:"−0,44 %", dir:"down" },
+    { lbl:"VIX",         val:"18,91",     chg:"+1,50 %", dir:"up"   },
+    { lbl:"BTC",         val:"63.926 $",  chg:"−1,40 %", dir:"down" },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"123,36 $", chg:"−0,97 %", dir:"down", sentiment:"neutral",
+      px:"122,94 $", chg:"−0,35 %", dir:"down", sentiment:"neutral",
       news:[
-        "Kein einzelner Kurstreiber; Bewertungsdebatte vor den Zahlen am 3. August hält an.",
-        "Insiderverkäufe und Kritik an der Zusammenarbeit mit dem britischen NHS belasten das Sentiment weiterhin.",
+        "Citi senkt Kursziel auf 200 $ von 225 $, hebt aber die Umsatzwachstumsprognose für 2027 auf 53 % an.",
+        "Investoren positionieren sich vor den Q2-Zahlen am 3. August, klare Richtung fehlt.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"316,42 $", chg:"−15,40 %", dir:"down", sentiment:"bearish",
+      px:"319,69 $", chg:"+1,03 %", dir:"up", sentiment:"bearish",
       news:[
-        "Q2-Zahlen verfehlen die Erwartungen deutlich, operative Kosten steigen schneller als der Umsatz, freier Cashflow negativ.",
-        "Frankreich lehnt die EU-Zulassung von Teslas FSD-Fahrassistenz vorerst ab.",
+        "Aktie erholt sich technisch nach dem 14-Prozent-Einbruch vom Vortag infolge verfehlter Q2-Erwartungen und steigender Kosten.",
+        "NHTSA-Ermittlungen zum Autopilot-System bleiben als regulatorischer Overhang im Hintergrund bestehen.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"207,84 $", chg:"−1,99 %", dir:"down", sentiment:"neutral",
+      px:"209,72 $", chg:"+0,46 %", dir:"up", sentiment:"bullish",
       news:[
-        "Kein unternehmensspezifischer Treiber; Aktie fällt mit dem breiten KI-Ausverkauf nach Alphabets Capex-Schock.",
-        "Bericht, wonach Chinas Moonshot AI trotz US-Exportverbot Zugriff auf Nvidia-Chips hatte, sorgt für regulatorischen Gegenwind.",
+        "Nvidia, Microsoft und Meta warnen gemeinsam vor verfrühten Restriktionen für offene KI-Modelle.",
+        "Amkor Technology meldet 1,5-Milliarden-Dollar-Deal mit Nvidia, UBS stuft Amkor auf Kaufen hoch.",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.579,20 €", chg:"−0,65 %", dir:"down", sentiment:"bullish",
+      px:"1.544,66 €", chg:"−2,48 %", dir:"down", sentiment:"bullish",
       news:[
-        "Blowout-Quartalszahlen und die zweite Anhebung der Jahresprognose 2026 auf 43–45 Mrd. Euro Umsatz treiben die Aktie.",
+        "Aktie fällt mit dem breiten Halbleiter-Ausverkauf nach Alphabets Capex-Schock, ungeachtet der zuletzt zweimal angehobenen Jahresprognose.",
         "US-Exportkontrollen und der China-Geschäftsanteil bleiben als Overhang im Hintergrund bestehen.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"233,73 $", chg:"−4,54 %", dir:"down", sentiment:"bearish",
+      px:"231,56 $", chg:"−0,90 %", dir:"down", sentiment:"bearish",
       news:[
-        "Ein Senatsausschuss prüft mutmaßlichen chinesischen Einfluss auf Amazon, dazu wachsende Sorge vor steigenden KI-Investitionen vor den Zahlen am 30. Juli.",
+        "Amazon schließt laut Reuters seine AGI-Lab-Einheit und baut dort Stellen ab.",
+        "Moody's warnt vor Risiken für die Kreditqualität von Amazon durch die stark steigenden KI-Investitionen.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"539,63 $", chg:"−2,30 %", dir:"down", sentiment:"bullish",
+      px:"519,99 $", chg:"−3,65 %", dir:"down", sentiment:"bullish",
       news:[
-        "AMD stellt auf dem zweitägigen \"Advancing AI\"-Event neue Produkte vor und meldet eine KI-Inferenz-Partnerschaft mit Cerebras.",
-        "Weitere Rechenzentrums-Deals mit Vultr, TensorWave und Liqid rund um Instinct-GPUs unterstreichen die Nachfrage.",
+        "Baird hebt Kursziel auf Straßen-Höchstwert von 1.250 $ an, mehrere Analysten folgen nach dem \"Advancing AI\"-Event mit deutlichen Zielanhebungen.",
+        "Aktie gibt trotz positiver Analystenreaktion mit dem breiten Chip-Ausverkauf nach, Citi rät zum Nachkaufen.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"319,10 $", chg:"−6,72 %", dir:"down", sentiment:"bearish",
+      px:"319,76 $", chg:"+0,65 %", dir:"up", sentiment:"neutral",
       news:[
-        "Alphabet hebt die Capex-Prognose 2026 auf 195–205 Mrd. Dollar an, was trotz starkem Cloud-Wachstum Sorgen vor KI-Überinvestitionen schürt.",
-        "Die EU verhängt zusätzlich eine Kartellstrafe von 1 Mrd. Dollar wegen Play Store und Suche.",
+        "Verizon schließt Cloud- und KI-Deal mit Google im Wert von über 1 Milliarde Dollar ab.",
+        "Sorgen um steigende Kapitalausgaben und die geplante 40-Milliarden-Dollar-Aktienausgabe belasten weiterhin.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"112,90 $", chg:"−2,00 %", dir:"down", sentiment:"bearish",
+      px:"113,36 $", chg:"−4,13 %", dir:"down", sentiment:"bearish",
       news:[
-        "Der Start von Starship Flight 13 wird nach einer fehlgeschlagenen Raptor-3-Zündung abgebrochen, ein neuer Versuch wird frühestens kommende Woche erwartet.",
-        "Wachsende Leerverkäuferpositionen und Verwässerungssorgen vor dem Lock-up-Ablauf am 6. August belasten zusätzlich.",
+        "HSBC startet Coverage mit Hold-Rating und Kursziel 115 $, Morgan Stanley sieht Abwärtsrisiko bis 100 $ vor Lock-up-Ablauf.",
+        "13. Starship-Testflug am Freitagabend von Starbase aus gilt als nächster wichtiger Kurstreiber.",
       ],
     },
   ],
 
   outlook: {
-    title:"Freitag im Fokus",
-    body:"Der Wirtschaftskalender ist vor der Fed-Sitzung am 28./29. Juli dünn besetzt; am Freitag stehen vor allem die US-Neubauverkäufe für Juni sowie zahlreiche Einzelberichte außerhalb des Depots an. Die Ölpreise bleiben nach der Eskalation im Nahen Osten über der Marke von 100 Dollar je Barrel im Fokus, nachdem Huthi-Rebellen Tankerangriffe im Roten Meer gemeldet haben. SpaceX dürfte den nach der gescheiterten Raptor-3-Zündung abgesagten Start von Starship Flight 13 frühestens kommende Woche erneut versuchen. Nach dem scharfen Ausverkauf bei Alphabet und Tesla dürfte der Markt weiter auf Reaktionen zur Kapitalausgaben-Debatte in der KI-Branche achten.",
+    title:"Montag im Fokus",
+    body:"Die Fed-Sitzung am 28./29. Juli rückt in den Fokus, nachdem der PCE-Preisindex zuletzt über den Erwartungen lag. SpaceX startete am Freitagabend den 13. Starship-Testflug von Starbase aus, dessen Ausgang den Handel am Montag prägen dürfte. Die Debatte um die stark steigenden KI-Investitionsausgaben bleibt nach Alphabets Prognoseanhebung im Fokus, bevor Amazon am 30. Juli seine Quartalszahlen vorlegt. Die neuen US-Zölle auf einen Großteil der Importe sowie der weiterhin erhöhte Ölpreis bleiben zusätzliche Belastungsfaktoren.",
   },
 };
 
