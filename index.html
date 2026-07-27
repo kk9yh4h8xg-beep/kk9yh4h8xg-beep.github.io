@@ -140,87 +140,86 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Freitag, 24. Juli 2026",
+  date:    "Montag, 27. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1384  ·  Erholung nach Tech-Ausverkauf  ·  Neue US-Zölle treten in Kraft  ·  Ölpreis fällt unter 100 $",
+  headline:"EUR/USD 1,1397  ·  Chip-Ausverkauf um Nvidia, AMD und ASML bremst Nasdaq  ·  Ölpreis fällt auf US-Iran-Waffenruhe  ·  Fed-Entscheid und Big-Tech-Zahlen prägen die Woche",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.379",     chg:"+0,28 %", dir:"up"   },
-    { lbl:"NASDAQ 100",  val:"29.043",    chg:"−0,44 %", dir:"down" },
-    { lbl:"VIX",         val:"18,91",     chg:"+1,50 %", dir:"up"   },
-    { lbl:"BTC",         val:"63.926 $",  chg:"−1,40 %", dir:"down" },
+    { lbl:"S&P 500",     val:"7.454",      chg:"+0,57 %", dir:"up"   },
+    { lbl:"NASDAQ 100",  val:"27.870",     chg:"−0,92 %", dir:"down" },
+    { lbl:"VIX",         val:"19,30",      chg:"+3,90 %", dir:"up"   },
+    { lbl:"BTC",         val:"65.900 $",   chg:"+1,20 %", dir:"up"   },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"122,94 $", chg:"−0,35 %", dir:"down", sentiment:"neutral",
+      px:"129,70 $", chg:"+4,10 %", dir:"up", sentiment:"bullish",
       news:[
-        "Citi senkt Kursziel auf 200 $ von 225 $, hebt aber die Umsatzwachstumsprognose für 2027 auf 53 % an.",
-        "Investoren positionieren sich vor den Q2-Zahlen am 3. August, klare Richtung fehlt.",
+        "Defense Intelligence Agency zieht umstrittene Ausschreibung nach Palantir-Protest zurück.",
+        "Erweiterte NVIDIA-Partnerschaft für souveräne KI-Modelle und Auswahl durchs US-Heer im NGC2-Programm stützen die Aktie vor den Zahlen am 3. August.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"319,69 $", chg:"+1,03 %", dir:"up", sentiment:"bearish",
+      px:"312,40 $", chg:"−0,20 %", dir:"down", sentiment:"bearish",
       news:[
-        "Aktie erholt sich technisch nach dem 14-Prozent-Einbruch vom Vortag infolge verfehlter Q2-Erwartungen und steigender Kosten.",
-        "NHTSA-Ermittlungen zum Autopilot-System bleiben als regulatorischer Overhang im Hintergrund bestehen.",
+        "Aktie verharrt nahe dem Elf-Monats-Tief nach dem Gewinn-Fehltritt und der schwachen Capex-Prognose der Vorwoche.",
+        "NHTSA-Untersuchung zum Autopilot-System bleibt als regulatorischer Überhang bestehen.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"209,72 $", chg:"+0,46 %", dir:"up", sentiment:"bullish",
+      px:"197,45 $", chg:"−4,99 %", dir:"down", sentiment:"bearish",
       news:[
-        "Nvidia, Microsoft und Meta warnen gemeinsam vor verfrühten Restriktionen für offene KI-Modelle.",
-        "Amkor Technology meldet 1,5-Milliarden-Dollar-Deal mit Nvidia, UBS stuft Amkor auf Kaufen hoch.",
+        "Bericht über einen möglichen 250-Milliarden-Dollar-Backstop für OpenAI-Rechenzentrumskapazitäten schürt Sorgen um zirkuläre Finanzierung.",
+        "Bericht über chinesische DUV-Lithografie-Produktion nährt Zweifel an der Technologieführerschaft westlicher Chip-Zulieferer und zieht den Sektor mit.",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.544,66 €", chg:"−2,48 %", dir:"down", sentiment:"bullish",
+      px:"1.449,00 €", chg:"−7,30 %", dir:"down", sentiment:"bearish",
       news:[
-        "Aktie fällt mit dem breiten Halbleiter-Ausverkauf nach Alphabets Capex-Schock, ungeachtet der zuletzt zweimal angehobenen Jahresprognose.",
-        "US-Exportkontrollen und der China-Geschäftsanteil bleiben als Overhang im Hintergrund bestehen.",
+        "Bericht über ein Shanghaier Unternehmen, das eigene DUV-Lithografiemaschinen in Serie fertigt, weckt Zweifel an ASMLs China-Marktanteil.",
+        "US-Exportkontrollen und der MATCH-Act-Overhang bleiben als struktureller Belastungsfaktor bestehen.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"231,56 $", chg:"−0,90 %", dir:"down", sentiment:"bearish",
+      px:"232,16 $", chg:"+0,02 %", dir:"flat", sentiment:"neutral",
       news:[
-        "Amazon schließt laut Reuters seine AGI-Lab-Einheit und baut dort Stellen ab.",
-        "Moody's warnt vor Risiken für die Kreditqualität von Amazon durch die stark steigenden KI-Investitionen.",
+        "Investoren positionieren sich vor dem Quartalsbericht am 30. Juli, bei dem CEO Jassy die Capex-Prognose anheben dürfte.",
+        "Wells Fargo bestätigt Kursziel von 322 $, verweist aber auf steigende Speicherchip-Kosten als Belastungsfaktor.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"519,99 $", chg:"−3,65 %", dir:"down", sentiment:"bullish",
+      px:"495,80 $", chg:"−6,50 %", dir:"down", sentiment:"bearish",
       news:[
-        "Baird hebt Kursziel auf Straßen-Höchstwert von 1.250 $ an, mehrere Analysten folgen nach dem \"Advancing AI\"-Event mit deutlichen Zielanhebungen.",
-        "Aktie gibt trotz positiver Analystenreaktion mit dem breiten Chip-Ausverkauf nach, Citi rät zum Nachkaufen.",
+        "Aktie durchbricht die 500-Dollar-Marke, da sich die Schwäche im Chip-Sektor vor den Zahlen am 4. August verschärft.",
+        "Sektorweiter Ausverkauf im Zuge der Nvidia- und ASML-Nachrichten zieht AMD mit.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"319,76 $", chg:"+0,65 %", dir:"up", sentiment:"neutral",
+      px:"328,10 $", chg:"+0,50 %", dir:"up", sentiment:"neutral",
       news:[
-        "Verizon schließt Cloud- und KI-Deal mit Google im Wert von über 1 Milliarde Dollar ab.",
-        "Sorgen um steigende Kapitalausgaben und die geplante 40-Milliarden-Dollar-Aktienausgabe belasten weiterhin.",
+        "Aktie stabilisiert sich nach den starken Q2-Zahlen der Vorwoche trotz fortbestehender Verzögerung bei Gemini 3.5 Pro.",
+        "EU-Kartellstrafe über 4,67 Milliarden Dollar und Auflagen zum Digital Markets Act bleiben als regulatorischer Überhang bestehen.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"113,36 $", chg:"−4,13 %", dir:"down", sentiment:"bearish",
+      px:"110,05 $", chg:"−4,36 %", dir:"down", sentiment:"bearish",
       news:[
-        "HSBC startet Coverage mit Hold-Rating und Kursziel 115 $, Morgan Stanley sieht Abwärtsrisiko bis 100 $ vor Lock-up-Ablauf.",
-        "13. Starship-Testflug am Freitagabend von Starbase aus gilt als nächster wichtiger Kurstreiber.",
+        "Aktie nahe Allzeittief, Markt positioniert sich vor der Lock-up-Freigabe von bis zu 911,5 Millionen Aktien am 6. August.",
       ],
     },
   ],
 
   outlook: {
-    title:"Montag im Fokus",
-    body:"Die Fed-Sitzung am 28./29. Juli rückt in den Fokus, nachdem der PCE-Preisindex zuletzt über den Erwartungen lag. SpaceX startete am Freitagabend den 13. Starship-Testflug von Starbase aus, dessen Ausgang den Handel am Montag prägen dürfte. Die Debatte um die stark steigenden KI-Investitionsausgaben bleibt nach Alphabets Prognoseanhebung im Fokus, bevor Amazon am 30. Juli seine Quartalszahlen vorlegt. Die neuen US-Zölle auf einen Großteil der Importe sowie der weiterhin erhöhte Ölpreis bleiben zusätzliche Belastungsfaktoren.",
+    title:"Dienstag im Fokus",
+    body:"PayPal, UPS, Boeing, Coca-Cola und Corning legen vor US-Börsenschluss Zahlen vor, SK Hynix und Ford folgen nach Handelsschluss. Der Chip-Sektor bleibt nach dem heutigen Ausverkauf um Nvidia, AMD und ASML im Fokus, zusätzlich befeuert durch SK Hynix als Gradmesser für die Speicherchip-Nachfrage. Die Fed-Zinsentscheidung am Mittwoch sowie die Zahlen von Meta, Microsoft und Amazon später in der Woche rücken näher. Die Ölpreise bleiben nach der Waffenruhe zwischen den USA und dem Iran unter Druck.",
   },
 };
 
