@@ -140,86 +140,87 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Montag, 27. Juli 2026",
+  date:    "Dienstag, 28. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1397  ·  Chip-Ausverkauf um Nvidia, AMD und ASML bremst Nasdaq  ·  Ölpreis fällt auf US-Iran-Waffenruhe  ·  Fed-Entscheid und Big-Tech-Zahlen prägen die Woche",
+  headline:"EUR/USD 1,1366  ·  Chip-Selloff drückt NASDAQ 100 nahe Korrektur  ·  Fed-Zinsentscheidung morgen im Fokus  ·  Ölpreis fällt auf US-Iran-Annäherung",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.454",      chg:"+0,57 %", dir:"up"   },
-    { lbl:"NASDAQ 100",  val:"27.870",     chg:"−0,92 %", dir:"down" },
-    { lbl:"VIX",         val:"19,30",      chg:"+3,90 %", dir:"up"   },
-    { lbl:"BTC",         val:"65.900 $",   chg:"+1,20 %", dir:"up"   },
+    { lbl:"S&P 500",     val:"7.476",     chg:"+0,30 %", dir:"up"   },
+    { lbl:"NASDAQ 100",  val:"27.870",    chg:"−0,92 %", dir:"down" },
+    { lbl:"VIX",         val:"18,25",     chg:"−5,44 %", dir:"down" },
+    { lbl:"BTC",         val:"63.400 $",  chg:"−3,79 %", dir:"down" },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"129,70 $", chg:"+4,10 %", dir:"up", sentiment:"bullish",
+      px:"122,87 $", chg:"−5,26 %", dir:"down", sentiment:"bearish",
       news:[
-        "Defense Intelligence Agency zieht umstrittene Ausschreibung nach Palantir-Protest zurück.",
-        "Erweiterte NVIDIA-Partnerschaft für souveräne KI-Modelle und Auswahl durchs US-Heer im NGC2-Programm stützen die Aktie vor den Zahlen am 3. August.",
+        "Institutionelle Investoren nehmen nach der jüngsten Kursrally Gewinne mit, Sorge um nachlassendes US-Commercial-Wachstum belastet die Bewertung.",
+        "Verschärfter Wettbewerb im Behördengeschäft nährt Zweifel an Palantirs Preissetzungsmacht.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"312,40 $", chg:"−0,20 %", dir:"down", sentiment:"bearish",
+      px:"308,53 $", chg:"−1,24 %", dir:"down", sentiment:"neutral",
       news:[
-        "Aktie verharrt nahe dem Elf-Monats-Tief nach dem Gewinn-Fehltritt und der schwachen Capex-Prognose der Vorwoche.",
-        "NHTSA-Untersuchung zum Autopilot-System bleibt als regulatorischer Überhang bestehen.",
+        "Q2-Gewinn je Aktie verfehlt mit 0,33 $ die Konsensschätzung von rund 0,51–0,54 $ deutlich, Umsatz von 28,24 Mrd. $ übertrifft die Erwartungen klar.",
+        "Auto- und Energiemarge sinken spürbar; NHTSA-Untersuchung zum Autopilot-System bleibt als regulatorischer Überhang bestehen.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"197,45 $", chg:"−4,99 %", dir:"down", sentiment:"bearish",
+      px:"194,49 $", chg:"−1,51 %", dir:"down", sentiment:"bearish",
       news:[
-        "Bericht über einen möglichen 250-Milliarden-Dollar-Backstop für OpenAI-Rechenzentrumskapazitäten schürt Sorgen um zirkuläre Finanzierung.",
-        "Bericht über chinesische DUV-Lithografie-Produktion nährt Zweifel an der Technologieführerschaft westlicher Chip-Zulieferer und zieht den Sektor mit.",
+        "Berichte über eine mögliche 250-Milliarden-Dollar-Finanzierungsgarantie für OpenAIs Ohio-Rechenzentrum nähren Sorgen vor zirkulären KI-Finanzierungsdeals.",
+        "Investor Michael Burry äußert öffentlich Bedenken zur Konstruktion, der Chip-Sektor bleibt insgesamt unter Druck.",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.449,00 €", chg:"−7,30 %", dir:"down", sentiment:"bearish",
+      px:"1.407,00 €", chg:"−2,90 %", dir:"down", sentiment:"bearish",
       news:[
-        "Bericht über ein Shanghaier Unternehmen, das eigene DUV-Lithografiemaschinen in Serie fertigt, weckt Zweifel an ASMLs China-Marktanteil.",
+        "Berichte über Fortschritte chinesischer Hersteller bei Immersions-Lithografie schüren erneut Zweifel an ASMLs China-Marktanteil.",
         "US-Exportkontrollen und der MATCH-Act-Overhang bleiben als struktureller Belastungsfaktor bestehen.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"232,16 $", chg:"+0,02 %", dir:"flat", sentiment:"neutral",
+      px:"231,90 $", chg:"−0,11 %", dir:"flat", sentiment:"neutral",
       news:[
-        "Investoren positionieren sich vor dem Quartalsbericht am 30. Juli, bei dem CEO Jassy die Capex-Prognose anheben dürfte.",
-        "Wells Fargo bestätigt Kursziel von 322 $, verweist aber auf steigende Speicherchip-Kosten als Belastungsfaktor.",
+        "Investoren halten sich vor dem Quartalsbericht am 30. Juli zurück, bei dem die KI-Investitionen im Fokus stehen dürften.",
+        "Amazon und PayPal starten im August einen Buy-now-pay-later-Dienst in Deutschland und Österreich.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"495,80 $", chg:"−6,50 %", dir:"down", sentiment:"bearish",
+      px:"451,94 $", chg:"−8,85 %", dir:"down", sentiment:"bearish",
       news:[
-        "Aktie durchbricht die 500-Dollar-Marke, da sich die Schwäche im Chip-Sektor vor den Zahlen am 4. August verschärft.",
-        "Sektorweiter Ausverkauf im Zuge der Nvidia- und ASML-Nachrichten zieht AMD mit.",
+        "Enttäuschender Ausblick für KI-Beschleuniger schürt Sorgen über nachlassende Cloud-Investitionen der Hyperscaler.",
+        "Berichte über einen schnelleren Produktzyklus bei Nvidia sowie mögliche neue Exportbeschränkungen belasten zusätzlich.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"328,10 $", chg:"+0,50 %", dir:"up", sentiment:"neutral",
+      px:"335,05 $", chg:"+2,12 %", dir:"up", sentiment:"bullish",
       news:[
-        "Aktie stabilisiert sich nach den starken Q2-Zahlen der Vorwoche trotz fortbestehender Verzögerung bei Gemini 3.5 Pro.",
-        "EU-Kartellstrafe über 4,67 Milliarden Dollar und Auflagen zum Digital Markets Act bleiben als regulatorischer Überhang bestehen.",
+        "Rotation aus Chip-Werten in Software-Megacaps stützt die Aktie inmitten des branchenweiten Ausverkaufs.",
+        "Die Q2-Zahlen vom 23. Juli mit 2,31 $ je Aktie über der Konsensschätzung von 2,15 $ wirken weiter positiv nach.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"110,05 $", chg:"−4,36 %", dir:"down", sentiment:"bearish",
+      px:"116,49 $", chg:"+5,85 %", dir:"up", sentiment:"bearish",
       news:[
-        "Aktie nahe Allzeittief, Markt positioniert sich vor der Lock-up-Freigabe von bis zu 911,5 Millionen Aktien am 6. August.",
+        "Aktie erholt sich von einem Intraday-Einbruch um bis zu 20 % unter den IPO-Preis, bleibt aber vor der Lock-up-Freigabe von bis zu 911,5 Millionen Aktien am 6. August unter Druck.",
+        "S-1-Offenlegung eines Nettoverlusts von 4,94 Mrd. $ für 2025, größtenteils getrieben vom xAI-Segment, belastet zusätzlich.",
       ],
     },
   ],
 
   outlook: {
-    title:"Dienstag im Fokus",
-    body:"PayPal, UPS, Boeing, Coca-Cola und Corning legen vor US-Börsenschluss Zahlen vor, SK Hynix und Ford folgen nach Handelsschluss. Der Chip-Sektor bleibt nach dem heutigen Ausverkauf um Nvidia, AMD und ASML im Fokus, zusätzlich befeuert durch SK Hynix als Gradmesser für die Speicherchip-Nachfrage. Die Fed-Zinsentscheidung am Mittwoch sowie die Zahlen von Meta, Microsoft und Amazon später in der Woche rücken näher. Die Ölpreise bleiben nach der Waffenruhe zwischen den USA und dem Iran unter Druck.",
+    title:"Mittwoch im Fokus",
+    body:"Die Fed verkündet um 20:00 Uhr MESZ ihre Zinsentscheidung, Wall Street erwartet zum fünften Mal in Folge unveränderte Leitzinsen bei 3,50–3,75 %; die Pressekonferenz folgt um 20:30 Uhr MESZ. Nach US-Börsenschluss legen Microsoft und Meta ihre Q2-Zahlen vor – bei Microsoft steht das Azure-Wachstum im Fokus, bei Meta die auf bis zu 145 Mrd. $ angehobene Capex-Prognose für KI-Infrastruktur. Auch Qualcomm berichtet, gestützt von neuen KI-Chip-Deals mit Microsoft und Meta. Der Chip-Sektor bleibt nach dem heutigen Ausverkauf und dem Kurseinbruch bei Samsung und SK Hynix in Südkorea im Fokus.",
   },
 };
 
