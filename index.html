@@ -140,87 +140,87 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Mittwoch, 29. Juli 2026",
+  date:    "Donnerstag, 30. Juli 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1386  ·  Fed hält Zinsen trotz drei Falken-Dissents  ·  Nasdaq 100 rutscht in Korrektur  ·  Chip-Ausverkauf hält an",
+  headline:"EUR/USD 1,1525  ·  Fed hält Zinsen, Big-Tech-Rally nach starken Microsoft-Zahlen  ·  Chip-Aktien erholen sich kräftig  ·  Amazon- und Apple-Zahlen nach Handelsschluss",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.316,15", chg:"−1,52 %", dir:"down" },
-    { lbl:"NASDAQ 100",  val:"27.763",   chg:"−1,81 %", dir:"down" },
-    { lbl:"VIX",         val:"18,58",    chg:"−0,64 %", dir:"down" },
-    { lbl:"BTC",         val:"64.400 $", chg:"+0,70 %", dir:"up"   },
+    { lbl:"S&P 500",     val:"7.437,63",  chg:"+1,70 %",  dir:"up"   },
+    { lbl:"NASDAQ 100",  val:"28.031,60", chg:"+3,21 %",  dir:"up"   },
+    { lbl:"VIX",         val:"17,09",     chg:"−17,27 %", dir:"down" },
+    { lbl:"BTC",         val:"64.839 $",  chg:"+1,46 %",  dir:"up"   },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"125,89 $", chg:"+1,91 %", dir:"up", sentiment:"neutral",
+      px:"122,26 $", chg:"−0,60 %", dir:"down", sentiment:"neutral",
       news:[
-        "Oppenheimer erwartet vor den Zahlen am 3. August einen soliden Beat & Raise.",
-        "Nach dem Kurssturz vom Vortag mehren sich vorsichtige Stimmen zur hohen Bewertung.",
+        "Q2-Zahlen für den 3. August terminiert, Investoren positionieren sich vorsichtig; Michael Burry bekräftigt seine Short-Wette.",
+        "Aktie nahe 52-Wochen-Tief, Analysten bleiben aber mehrheitlich bei Kaufempfehlungen trotz hoher Bewertung.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"301,84 $", chg:"−1,82 %", dir:"down", sentiment:"bearish",
+      px:"308,85 $", chg:"+3,53 %", dir:"up", sentiment:"bullish",
       news:[
-        "Berichte über riskante Robotaxi-Testfahrten nähren Sicherheitsbedenken kurz vor den Zahlen.",
-        "NHTSA-Untersuchungen zum Autopilot bleiben als regulatorischer Overhang bestehen.",
+        "Tesla meldet Produktion des zehnmillionsten Elektrofahrzeugs, sechs Jahre nach der ersten Million.",
+        "Erholung im Sog der breiten Tech-Rally nach starken Microsoft-Zahlen; europäische FSD-Daten bestätigen gute Sicherheitswerte.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"191,87 $", chg:"−2,61 %", dir:"down", sentiment:"bearish",
+      px:"195,04 $", chg:"+2,65 %", dir:"up", sentiment:"bullish",
       news:[
-        "Halbleiter-Ausverkauf hält an, Kapital rotiert spürbar Richtung Apple und andere Werte.",
-        "Cuban und Burry warnen vor zu starker Abhängigkeit des KI-Booms von Nvidia.",
+        "Chip-Sektor erholt sich kräftig nach starken Microsoft-Cloud-Zahlen, befeuert neuen KI-Infrastruktur-Optimismus.",
+        "Bericht: Nvidia in Gesprächen über einen 250-Mrd.-Dollar-Backstop für ein OpenAI-Rechenzentrumsprojekt in Ohio.",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.380,20 €", chg:"−2,90 %", dir:"down", sentiment:"bearish",
+      px:"1.405,40 €", chg:"+3,17 %", dir:"up", sentiment:"bullish",
       news:[
-        "Berichte über eigene chinesische DUV-Lithografie-Fertigung belasten die Monopol-Story.",
-        "BofA hält die Reaktion für übertrieben; US-Exportkontrollen bleiben struktureller Overhang.",
+        "Aktie erholt sich mit dem breiten Halbleiter-Rebound, nachdem zuletzt Sorgen um chinesische Konkurrenz belasteten.",
+        "China-Exportkontrollen und wachsender Wettbewerb durch chinesische EUV-Alternativen bleiben strukturelles Risiko im Hintergrund.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"228,62 $", chg:"−0,97 %", dir:"down", sentiment:"neutral",
+      px:"235,50 $", chg:"+3,90 %", dir:"up", sentiment:"bullish",
       news:[
-        "Q2-Zahlen stehen morgen nach Börsenschluss an, Optionsmarkt preist rund 15 $ Kursbewegung ein.",
-        "Morgan Stanley bleibt zuversichtlich zu Amazons KI-Investitionen und Cloud-Wachstum.",
+        "Q2-Zahlen nach Handelsschluss: Umsatz von 200,6 Mrd. Dollar und EPS von 5,75 Dollar deutlich über dem Konsens von 1,82 Dollar.",
+        "AWS wächst 36,7 Prozent – schnellstes Wachstum seit 18 Quartalen – getrieben von KI-Nachfrage.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"448,00 $", chg:"−1,46 %", dir:"down", sentiment:"bearish",
+      px:"485,46 $", chg:"+13,01 %", dir:"up", sentiment:"bullish",
       news:[
-        "Chip-Ausverkauf setzt sich fort, AMD zählt neben Intel zu den größten Verlierern des Tages.",
-        "Neue Core-Scientific-Partnerschaft über 2,5-GW-KI-Rechenzentren stützt die langfristige Story.",
+        "Kräftige Erholung nach fünf Verlusttagen, angetrieben von starken Microsoft-Cloud-Zahlen und der Chip-Sektor-Rally.",
+        "Susquehanna erhöht Kursziel auf 500 Dollar; 14-Mrd.-Dollar-Rechenzentrumsdeal mit Core Scientific stützt Wachstumsstory.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"341,23 $", chg:"+2,25 %", dir:"up", sentiment:"neutral",
+      px:"334,95 $", chg:"−0,52 %", dir:"down", sentiment:"neutral",
       news:[
-        "Reddit fordert deutlich höhere Vergütung für KI-Trainingsdaten, Vertragsgespräche stocken.",
-        "Morgan Stanley bekräftigt bullishe Haltung zu Alphabets milliardenschwerer KI-Investition.",
+        "Aktie fällt leicht, während Microsoft trotz vergleichbar starker Cloud-Zahlen deutlich zulegt.",
+        "Hoher Capex-Ausblick (195–205 Mrd. Dollar) und negativer Free Cashflow belasten weiter die Anlegerstimmung.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"115,12 $", chg:"−1,11 %", dir:"down", sentiment:"neutral",
+      px:"112,20 $", chg:"−0,31 %", dir:"down", sentiment:"bearish",
       news:[
-        "Berichte über SpaceX-Ambitionen im Mobilfunkspektrum belasten AT&T und Verizon.",
-        "Cramer warnt vor Volatilität durch die Lock-up-Freigabe am 6. August vor den Zahlen am 4. August.",
+        "Aktie nahe Rekordtief; Short-Seller bauen Wetten von über 26 Mrd. Dollar vor dem Lock-up-Ablauf am 6. August weiter aus.",
+        "US Space Force erteilt 1,6-Mrd.-Dollar-Auftrag für 18 Falcon-9-Starts, stützt den Kurs nur leicht.",
       ],
     },
   ],
 
   outlook: {
-    title:"Donnerstag im Fokus",
-    body:"Amazon legt morgen nach US-Börsenschluss die Q2-Zahlen vor, der Optionsmarkt preist eine Kursbewegung von rund 15 Dollar ein. Zeitgleich berichten weitere Schwergewichte im Rahmen der großen Tech-Earnings-Woche, was nach dem heutigen Fed-Entscheid zusätzliche Volatilität bringen dürfte. Die Anleiherenditen bleiben nach der falkenhaften Zinspause erhöht, während der Halbleiter-Ausverkauf die Stimmung weiter belastet.",
+    title:"Freitag im Fokus",
+    body:"Die nach Handelsschluss veröffentlichten Amazon- und Apple-Zahlen dürften den Handel am Freitag prägen. Im Energiesektor legen ExxonMobil und Chevron Quartalszahlen vor, zudem steht der finale University-of-Michigan-Konsumentenvertrauensindex für Juli an. Die Ölpreise bleiben wegen der eskalierenden US-Iran-Spannungen erhöht, was die Stimmung belasten könnte. Der starke Chip-Sektor-Rebound vom Donnerstag bleibt ebenfalls im Fokus, nachdem Microsofts Cloud-Zahlen die Runde beflügelt hatten.",
   },
 };
 
