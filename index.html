@@ -137,90 +137,90 @@ body{
    • Zahlen als String, deutsches Format (Komma, Minuszeichen −)
    • news: 0–3 kurze Punkte pro Position. Leeres [] = keine.
    • Positionen: Reihenfolge frei, Einträge dürfen weg.
-   • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich.
+   • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Montag, 3. August 2026",
+  date:    "Dienstag, 4. August 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1512  ·  Iran-Entspannung drückt Ölpreis  ·  Big-Tech-Rally treibt Wall Street  ·  ISM-Dienstleistungsindex über Erwartungen",
+  headline:"EUR/USD 1,1520 · Palantir-Rekordrally treibt S&P 500 auf Allzeithoch · Chip-Sektor vor AMD- und SpaceX-Zahlen · Hormuz-Spannungen stützen Ölpreis",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.600,50",  chg:"+1,48 %", dir:"up"   },
-    { lbl:"NASDAQ 100",  val:"28.604,93", chg:"+1,17 %", dir:"up"   },
-    { lbl:"VIX",         val:"15,77",     chg:"−1,38 %", dir:"down" },
-    { lbl:"BTC",         val:"62.550 $",  chg:"−1,00 %", dir:"down" },
+    { lbl:"S&P 500",     val:"7.736,52", chg:"+1,79 %", dir:"up"   },
+    { lbl:"NASDAQ 100",  val:"29.541",   chg:"+3,27 %", dir:"up"   },
+    { lbl:"VIX",         val:"15,86",    chg:"−0,80 %", dir:"down" },
+    { lbl:"BTC",         val:"64.100 $", chg:"+1,05 %", dir:"up"   },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"125,26 $", chg:"+1,79 %", dir:"up", sentiment:"neutral",
+      px:"163,02 $", chg:"+29,74 %", dir:"up", sentiment:"bullish",
       news:[
-        "Q2-Zahlen werden heute nach US-Börsenschluss veröffentlicht, Aktie liegt vor dem Bericht rund 30 % im Jahresverlauf im Minus.",
-        "Mercury Systems und Palantir vereinbaren strategische Partnerschaft zur Fabrikautomatisierung.",
+        "Q2-Umsatz springt um 93 % auf 1,94 Mrd. $, US-Commercial-Geschäft wächst um 149 % – größte Prognoseanhebung der Firmengeschichte auf rund 8,15 Mrd. $ Jahresumsatz.",
+        "Mehrere Analysten, darunter Deutsche Bank und Northland, erhöhen nach dem Rekordquartal ihre Kursziele deutlich.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"323,94 $", chg:"+4,09 %", dir:"up", sentiment:"neutral",
+      px:"327,39 $", chg:"+1,65 %", dir:"up", sentiment:"neutral",
       news:[
-        "NHTSA eröffnet Untersuchung zu Federungsausfällen bei Model 3 und Model Y.",
-        "Berichte über mögliche Abspaltung des China-Geschäfts im Zuge einer SpaceX-Fusion; Musk dementiert.",
+        "Chinesische Werksauslieferungen steigen im Juli um 37,8 % gegenüber dem Vorjahr.",
+        "Berichte über eine mögliche Fusion mit SpaceX werden durch Teslas China-Geschäft erschwert.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"208,16 $", chg:"+3,69 %", dir:"up", sentiment:"bullish",
+      px:"212,96 $", chg:"+3,06 %", dir:"up", sentiment:"bullish",
       news:[
-        "Aktie profitiert laut Investoreneinschätzung von starker Nachfrage nach KI-Infrastruktur.",
-        "Berichte über neue Vorstöße von KI-Codier-Agenten gegen Nvidias CUDA-Softwaremonopol sorgen für Hintergrundskepsis.",
+        "Nvidia-nahes KI-Rechenzentrum-Startup schließt 10-Mrd.-$-Rechenleistungsdeal mit Anthropic.",
+        "Breite Speicherchip-Rallye (Micron, SanDisk) zieht den gesamten Sektor vor den AMD-Zahlen mit.",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.413,20 €", chg:"−1,46 %", dir:"down", sentiment:"bearish",
+      px:"1.473,33 €", chg:"+3,33 %", dir:"up", sentiment:"bullish",
       news:[
-        "Berichte über Fortschritte eines Schanghaier Anbieters bei DUV-Lithografie-Alternativen belasten die Aktie erneut.",
-        "Regulatorischer Überhang bleibt bestehen: geplanter US-MATCH-Act zu DUV-Exporten nach China und schwächeres China-Geschäft.",
+        "Aktie profitiert von der branchenweiten Chip-Rallye im Vorfeld der AMD-Zahlen.",
+        "US-Exportkontrollen (MATCH Act) und Nachfragen von US-Handelsminister Lutnick zu einem möglicherweise nach China gelangten EUV-System bleiben ungelöster Hintergrund-Overhang.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"284,90 $", chg:"+4,90 %", dir:"up", sentiment:"bullish",
+      px:"277,39 $", chg:"−2,34 %", dir:"down", sentiment:"bearish",
       news:[
-        "Amazon überschreitet erstmals eine Marktkapitalisierung von 3 Billionen Dollar, getrieben von AWS- und KI-Wachstum.",
-        "AWS verzeichnet laut Unternehmensangaben eine deutliche Verschiebung der KI-Nachfrage.",
+        "Bezos meldet per Form-144-Mitteilung den Verkauf von rund 15 Mio. Aktien im Wert von etwa 4,07 Mrd. $.",
+        "New Jersey verklagt Amazon wegen mutmaßlich unterdrückter Löhne im Zustelldienst.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"489,55 $", chg:"+2,81 %", dir:"up", sentiment:"neutral",
+      px:"526,86 $", chg:"+8,71 %", dir:"up", sentiment:"bullish",
       news:[
-        "AMD legt morgen nach Börsenschluss Q2-Zahlen vor, Bernstein erhöht im Vorfeld die Prognose für KI-Server-Umsatz.",
-        "FXEmpire warnt trotz Kursgewinnen vor Rentabilitätssorgen im KI-Sektor, die Chipwerte insgesamt belasten könnten.",
+        "Aktie rallyt vor den Zahlen (Call um 17 Uhr ET) auf Basis der eigenen Umsatzprognose von 11,2 Mrd. $, ein Plus von rund 46 % gegenüber dem Vorjahr.",
+        "Optionsmarkt preist eine der größten Kursbewegungen der jüngeren Quartale ein.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"375,08 $", chg:"+5,32 %", dir:"up", sentiment:"bullish",
+      px:"377,67 $", chg:"+1,11 %", dir:"up", sentiment:"neutral",
       news:[
-        "Google DeepMind sieht laut eigenen Aussagen bereits die nächste KI-Entwicklungsstufe anbrechen.",
-        "Studie bescheinigt Googles Robotaxis eine höhere Sicherheit als menschliche Fahrer.",
+        "Alphabet nimmt neben Anthropic, Meta und OpenAI an einem Treffen im Weißen Haus zu einem neuen KI-Testrahmen teil.",
+        "Waymo öffnet seinen Robotaxi-Dienst in Dallas für alle Nutzer.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"110,74 $", chg:"+2,19 %", dir:"up", sentiment:"neutral",
+      px:"121,38 $", chg:"+5,98 %", dir:"up", sentiment:"bullish",
       news:[
-        "Ablauf der Aktiensperrfrist (Lock-up) für Millionen Aktien steht diese Woche bevor, Analysten warnen vor Verkaufsdruck.",
-        "RBC Capital hält die aktuelle Bewertung vor den morgigen Q2-Zahlen für attraktiv.",
+        "Erste Quartalszahlen als börsennotiertes Unternehmen übertreffen Erwartungen: Umsatz 7,81 statt erwarteter 6,93 Mrd. $, Verlust je Aktie geringer als prognostiziert.",
+        "Ab 6. August dürfen Insider bis zu 20 % ihrer Aktien (911,5 Mio. Stück) verkaufen – Lock-up-Ablauf als Belastungsfaktor.",
       ],
     },
   ],
 
   outlook: {
-    title:"Dienstag im Fokus",
-    body:"Die Marktreaktion auf die gestern nach Börsenschluss veröffentlichten Palantir-Zahlen zeigt sich im vorbörslichen Handel. AMD legt nach US-Börsenschluss eigene Q2-Zahlen vor, während bei SpaceX zusätzlich die auslaufende Lock-up-Frist im Fokus steht. Die Entspannung im Iran-Konflikt und der deutliche Ölpreisrückgang bleiben zentrale Treiber für die Wall Street, bevor am Freitag der US-Arbeitsmarktbericht ansteht.",
+    title:"Mittwoch im Fokus",
+    body:"Anleger verarbeiten die nachbörslichen Zahlen von AMD und SpaceX sowie deren Kursreaktion im vorbörslichen Handel. Die JOLTS-Daten vom Dienstag gelten als Vorbote für den Arbeitsmarktbericht am Freitag. Die Gespräche zur Beilegung der Spannungen in der Straße von Hormus bleiben ölmarktrelevant, während die Chip-Rallye der vergangenen Tage auf ihre Nachhaltigkeit geprüft wird.",
   },
 };
 
