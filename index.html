@@ -140,87 +140,87 @@ body{
    • KEINE Einstands-/Gewinn-Felder. Dieser Bericht ist öffentlich erreichbar.
    ════════════════════════════════════════════════════════════ */
 const report = {
-  date:    "Mittwoch, 5. August 2026",
+  date:    "Donnerstag, 6. August 2026",
   session: "US-Handelsschluss",
-  headline:"EUR/USD 1,1545 · Dow markiert neues Rekordhoch, S&P 500 und Nasdaq geben nach Vier-Tages-Rally leicht nach · AMD- und SpaceX-Ausverkauf nach Zahlen überschattet Nvidia-Rally · Hormuz-Hoffnungen drücken Ölpreis",
+  headline:"EUR/USD 1,1550 · Dow beendet Rekordserie mit Rücksetzer, S&P 500 und Nasdaq geben leicht nach · SpaceX übersteht ersten Lock-up-Ablauf · Jobless Claims vor NFP-Bericht am Freitag",
 
   indices: [
-    { lbl:"S&P 500",     val:"7.723,55",  chg:"−0,17 %", dir:"down" },
-    { lbl:"NASDAQ 100",  val:"29.462,59", chg:"−0,91 %", dir:"down" },
-    { lbl:"VIX",         val:"15,57",     chg:"−5,63 %", dir:"down" },
-    { lbl:"BTC",         val:"64.320 $",  chg:"+0,40 %", dir:"up"   },
+    { lbl:"S&P 500",     val:"7.709,96",  chg:"−0,18 %", dir:"down" },
+    { lbl:"NASDAQ 100",  val:"29.433,13", chg:"−0,10 %", dir:"down" },
+    { lbl:"VIX",         val:"15,77",     chg:"+1,28 %", dir:"up"   },
+    { lbl:"BTC",         val:"64.589,10 $", chg:"+0,77 %", dir:"up" },
   ],
 
   positions: [
     {
       tkr:"PLTR", nm:"Palantir · NASDAQ",
-      px:"158,43 $", chg:"−2,60 %", dir:"down", sentiment:"bullish",
+      px:"153,66 $", chg:"−3,01 %", dir:"down", sentiment:"bearish",
       news:[
-        "Aktie normalisiert sich nach dem 30-%-Kurssprung vom Vortag infolge der Q2-Blowout-Zahlen (Umsatz +93 %, US-Commercial +149 %); ARK von Cathie Wood nimmt Gewinne mit.",
-        "Deutsche Bank und Northland hatten zuvor ihre Kursziele auf bis zu 200 $ angehoben.",
+        "Health-Foundation-Analyse findet keinen messbaren Effekt von Palantirs Entlassungssoftware im NHS und widerspricht damit dem eigenen 15-%-Reduktionsversprechen.",
+        "RBC bleibt trotz des Rekordquartals vom Montag bearish; Aktie gibt nach dem 30-%-Kurssprung an der 166-$-Marke weitere Gewinne ab.",
       ],
     },
     {
       tkr:"TSLA", nm:"Tesla · NASDAQ",
-      px:"322,02 $", chg:"−1,63 %", dir:"down", sentiment:"neutral",
+      px:"316,32 $", chg:"−1,77 %", dir:"down", sentiment:"neutral",
       news:[
-        "Amazons Zoox startet ab 10. August kostenpflichtige Robotaxi-Fahrten in Las Vegas – wachsender Konkurrenzdruck auf Teslas Robotaxi-Pläne.",
-        "NHTSA-Untersuchungen zu Autopilot/FSD bleiben ein regulatorischer Overhang; neue Studie wirft Fragen zum Robotaxi-Training auf.",
+        "Robotaxi-Flotte nimmt in Miami den unüberwachten Betrieb auf – vierter US-Markt neben Austin, der Bay Area und Nevada.",
+        "Drei laufende NHTSA-Untersuchungen zu Full Self-Driving, darunter eine Sammeluntersuchung zu rund 3,2 Mio. Fahrzeugen, bleiben regulatorischer Overhang.",
       ],
     },
     {
       tkr:"NVDA", nm:"NVIDIA · NASDAQ",
-      px:"219,19 $", chg:"+3,42 %", dir:"up", sentiment:"bullish",
+      px:"219,61 $", chg:"+0,19 %", dir:"up", sentiment:"bullish",
       news:[
-        "Elon Musk kündigt an, dass SpaceX seine KI-Infrastruktur künftig exklusiv mit Nvidia-Chips aufbaut – Nvidia trotzt damit der Schwäche im übrigen Chipsektor.",
-        "Fünfter Gewinntag in Folge; Analysten-Konsens bleibt bei 'Strong Buy' mit Kursziel rund 303 $.",
+        "Aktie konsolidiert nahe dem Zwei-Monats-Hoch nach Musks Ankündigung, dass SpaceX seine Infrastruktur – auch im Orbit-Projekt \"Starmind\" – künftig exklusiv mit Nvidia-Chips baut.",
+        "Marktwert war durch die Nachricht am Vortag um rund 178 Mrd. $ gestiegen; Analystenkonsens bleibt \"Strong Buy\".",
       ],
     },
     {
       tkr:"ASML", nm:"ASML Holding · Euronext (EUR)",
-      px:"1.464,60 €", chg:"−1,24 %", dir:"down", sentiment:"neutral",
+      px:"1.472,80 €", chg:"+0,48 %", dir:"up", sentiment:"neutral",
       news:[
-        "Aktie gibt im Sog der breiten Chip-Sektor-Schwäche nach enttäuschendem AMD-Margenausblick nach.",
-        "US-Exportkontrollen nach China und aufkommende heimische DUV-Konkurrenz bleiben ein struktureller Overhang.",
+        "Aktie bewegt sich ohne eigenen frischen Impuls im Sog der US-Chip-Stärke seitwärts bis leicht fester.",
+        "US-Exportkontrollen (MATCH Act) und die Sorge um erstarkende chinesische DUV-Konkurrenz bleiben struktureller Hintergrund-Overhang.",
       ],
     },
     {
       tkr:"AMZN", nm:"Amazon · NASDAQ",
-      px:"272,58 $", chg:"−1,74 %", dir:"down", sentiment:"neutral",
+      px:"271,80 $", chg:"−0,29 %", dir:"down", sentiment:"bearish",
       news:[
-        "Tochter Zoox startet ab 10. August kostenpflichtige Robotaxi-Fahrten in Las Vegas – erster kommerzieller Markt für den Dienst.",
-        "Bezos' angekündigter Aktienverkauf über rund 4,1 Mrd. $ sowie eine Kartellklage New Jerseys wegen Fahrer-Löhnen belasten die Stimmung.",
+        "Bezos' Verkaufsplan über rund 4,1 Mrd. $ Amazon-Aktien bleibt im Fokus, nachdem Berkshire zuvor seinen kompletten Ausstieg vollzogen hatte.",
+        "New Jersey verklagt Amazon wegen mutmaßlich unterdrückter Löhne im Zustelldienst.",
       ],
     },
     {
       tkr:"AMD", nm:"Adv. Micro Devices · NASDAQ",
-      px:"481,30 $", chg:"−7,19 %", dir:"down", sentiment:"bearish",
+      px:"482,05 $", chg:"+0,16 %", dir:"up", sentiment:"neutral",
       news:[
-        "Q2-Zahlen mit Rekordumsatz (+50 % auf 11,54 Mrd. $) übertreffen die Erwartungen, doch der Margenausblick enttäuscht Anleger.",
-        "Elon Musk kürt Nvidia zum exklusiven KI-Chip-Lieferanten für SpaceX – klarer Rückschlag für AMDs Positionierung im KI-Rennen.",
+        "Aktie stabilisiert sich nach dem Ausverkauf vom Vortag; Q2-Rekordumsatz von 11,54 Mrd. $ und eine Q3-Prognose von 13 Mrd. $ über Konsens stützen.",
+        "Der Verlust des SpaceX-Exklusivmandats an Nvidia bleibt als strategischer Rückschlag im Raum stehen.",
       ],
     },
     {
       tkr:"GOOGL", nm:"Alphabet · NASDAQ",
-      px:"361,51 $", chg:"−4,27 %", dir:"down", sentiment:"bearish",
+      px:"377,73 $", chg:"+4,49 %", dir:"up", sentiment:"bullish",
       news:[
-        "DeepMind-Chef Demis Hassabis und Chefwissenschaftler Jeff Dean verlassen das Unternehmen – Sorgen um die KI-Führungsriege belasten trotz starker Q2-Zahlen.",
-        "Freier Cashflow im Quartal bei −5,86 Mrd. $, Aktienrückkaufprogramm ausgesetzt, langfristige Schulden auf 98,2 Mrd. $ fast verdoppelt.",
+        "Aktie erholt sich einen Tag nach dem Abgang von Chefwissenschaftler Jeff Dean und weiteren KI-Führungskräften deutlich.",
+        "Waymo öffnet seinen Robotaxi-Dienst in Dallas für alle Nutzer; Gemini Enterprise gewinnt im Firmenkundengeschäft an Zugkraft.",
       ],
     },
     {
       tkr:"SPCX", nm:"SpaceX · NASDAQ",
-      px:"108,29 $", chg:"−13,60 %", dir:"down", sentiment:"bearish",
+      px:"113,52 $", chg:"+4,83 %", dir:"up", sentiment:"bullish",
       news:[
-        "Erste Zahlen als börsennotiertes Unternehmen übertreffen beim Umsatz (7,81 statt 6,82 Mrd. $ erwartet) die Erwartungen, doch der KI-Capex springt auf 18,4 Mrd. $ im Quartal.",
-        "Lock-up-Ablauf am 6. August gibt rund 20 % der Aktien zum Handel frei – zusätzlicher Verkaufsdruck erwartet.",
+        "Erster Lock-up-Ablauf setzt bis zu 911,5 Mio. Insider-Aktien im Wert von rund 100 Mrd. $ zum Handel frei – Aktie hält sich dennoch fest.",
+        "Musks exklusiver Nvidia-Chip-Deal für das Orbital-Rechenzentrumsprojekt \"Starmind\" überlagert die Lock-up-Sorgen positiv.",
       ],
     },
   ],
 
   outlook: {
-    title:"Donnerstag im Fokus",
-    body:"Am Donnerstag steht der Lock-up-Ablauf bei SpaceX im Fokus: Rund 20 % der Aktien werden erstmals handelbar, was zusätzlichen Verkaufsdruck auslösen könnte. Anleger verarbeiten zudem die nachbörslichen Reaktionen auf die Zahlen von Disney, Shopify und Uber. Die Verhandlungen zur Wiedereröffnung der Straße von Hormus bleiben ölmarktrelevant, während der US-Arbeitsmarktbericht am Freitag zunehmend in den Fokus rückt.",
+    title:"Freitag im Fokus",
+    body:"Der US-Arbeitsmarktbericht für Juli steht am Freitag im Mittelpunkt, nachdem Erstanträge (199.000) und der Challenger-Report am Donnerstag ein gemischtes Bild lieferten. TSMC-Zahlen vom Donnerstagnachmittag mit angehobenem Capex-Ausblick könnten den Chipsektor belasten. Die Gespräche zu einer temporären Schifffahrtsroute durch die Straße von Hormus zwischen Iran und Oman bleiben ölmarktrelevant. Bei SpaceX rückt nach dem ersten Lock-up die nächste Freigabe von 319 Mio. Aktien am 12. August in den Blick.",
   },
 };
 
